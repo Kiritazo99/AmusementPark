@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1cd4da97-732a-4caa-b15a-372cc9413fdb">
+  <producedTypes>
+    <selectionType typeId="4e1c6281-568b-45f4-9bfa-fc445eaae387" valueTypeId="97a536aa-2db1-4009-b649-93616eb9d094"/>
+    <listType typeId="197e9953-6744-40db-a509-4da16ba2f21f" valueTypeId="1f35bc69-c3ef-4fe9-a785-748a890fadc7"/>
+    <managerType typeId="87467f84-59d6-4494-b051-5e27cb42b976" valueTypeId="fa68f7f6-2a79-4c9c-bb95-8f65bed292b0"/>
+    <recordSetType typeId="3a3f76a2-ceb5-48fb-872e-984920c66c28" valueTypeId="54c97f2e-08a5-467c-80a7-d27fd528f664"/>
+    <recordKeyType typeId="a0afb536-195a-4209-9d17-66292a2df3de" valueTypeId="210dc532-b2ab-48f0-acbd-8ee2da1eaa55"/>
+    <recordType typeId="19c541c5-a052-4b4f-a6b2-2b8b6ff816d7" valueTypeId="615c24f8-33e2-47d9-a576-449c0f9c1aec"/>
+  </producedTypes>
+  <name>АктивныеПосещения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Активные посещения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="fd0f6ad2-0833-485a-a628-84eeb325cc9c">
+    <name>КоличествоПосещений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество посещений</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="17c8d28d-d4cf-40b9-9ee0-2196c47fa7d4">
+    <name>Основание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основание</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ПродажаБилета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="c021f962-6ead-4c0b-a1d6-8976ae208ac4">
+    <name>Аттракцион</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аттракцион</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Аттракционы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>
